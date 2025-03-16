@@ -5,4 +5,4 @@ RUN npm install -g npm
 RUN npm install
 COPY . .
 RUN npx tsc
-CMD ["npx", "serve", "."]
+CMD ["npx", "run", "start"]
