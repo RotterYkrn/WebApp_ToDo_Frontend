@@ -1,21 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToDoアプリ</title>
+  <title>ToDo リスト</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>ToDoリスト</h1>
-    <div class="input-area">
-      <input type="text" id="todo-input" placeholder="新しいToDoを入力">
-      <button id="add-button">追加</button>
-    </div>
-    <ul id="todo-list">
-      </ul>
-  </div>
-  <script src="dist/script.js"></script>
-</body>
+  <h1>ToDo リスト</h1>
+  <div id="error-message"></div>
+  <ul id="todo-list">
+    </ul>
+  </body>
+
+  <script type="module" src="scripts/main.mjs"></script>
 </html>
