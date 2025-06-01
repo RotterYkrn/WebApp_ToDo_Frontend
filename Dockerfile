@@ -1,9 +1,13 @@
 FROM node:23-alpine AS base
+
 WORKDIR /app
-COPY package*.json ./
+
+COPY ../package*.json .
+COPY ../packages/shared-schema ./packages/shared-schema
 RUN npm install -g npm
 RUN npm install
-COPY . .
+
+COPY . ./server
 
 FROM base AS development
 CMD ["npm", "run", "dev"]
