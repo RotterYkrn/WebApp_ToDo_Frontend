@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>認証</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>認証</h1>
+
+    <div id="auth-forms">
+        <h2>ユーザー登録</h2>
+        <form id="signup-form">
+            <div>
+                <label for="signup-email">メールアドレス:</label>
+                <input type="email" id="signup-email" required>
+            </div>
+            <div>
+                <label for="signup-password">パスワード:</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <button type="submit">登録</button>
+            <div id="signup-error" style="color: red;"></div>
+        </form>
+
+        <h2>ログイン</h2>
+        <form id="login-form">
+            <div>
+                <label for="login-email">メールアドレス:</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div>
+                <label for="login-password">パスワード:</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">ログイン</button>
+            <div id="login-error" style="color: red;"></div>
+        </form>
+    </div>
+
+    <script type="module" src="scripts/authPage.ts"></script>
+</body>
+</html>
